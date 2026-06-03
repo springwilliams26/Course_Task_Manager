@@ -19,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
         authorizationParams={{
           redirect_uri: "http://localhost:5173/callback",
         }}
+        cacheLocation="localstorage"
       >
         <TaskProvider>
           <App />

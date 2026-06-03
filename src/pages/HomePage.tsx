@@ -15,7 +15,17 @@ const HomePage = () => {
       </p>
 
       {!isAuthenticated && (
-        <Button onClick={() => loginWithRedirect()}>Log In</Button>
+        <Button
+          onClick={() =>
+            loginWithRedirect({
+              appState: {
+                returnTo: "/dashboard",
+              },
+            })
+          }
+        >
+          Log In
+        </Button>
       )}
 
       {isAuthenticated && (
