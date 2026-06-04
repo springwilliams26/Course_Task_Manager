@@ -16,14 +16,16 @@ const DashboardPage = () => {
 
   return (
     <Container className="mt-4">
-      <h1>Course Task Dashboard</h1>
+      <h1 className="mb-3">Course Task Dashboard</h1>
 
-      <p>
+      <p className="text-muted mx-auto mb-4" style={{ maxWidth: "700px" }}>
         Manage active assignments, knowledge checks, career tasks, and
         graduation milestones.
       </p>
 
-      <Row className="mb-4">
+      <h4 className="mb-4 mt-2">Progress Overview</h4>
+
+      <Row className="justify-content-center mb-5 g-3">
         <Col md={3}>
           <Card>
             <Card.Body>
@@ -71,7 +73,7 @@ const DashboardPage = () => {
         </Button>
       </Link>
 
-      <h2>Active Tasks</h2>
+      <h2 className="mt-4 mb-4">Active Tasks</h2>
 
       {activeTasks.length === 0 ? (
         <p>No active tasks. Great job!</p>
