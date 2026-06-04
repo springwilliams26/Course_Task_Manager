@@ -9,6 +9,7 @@ import TaskDetailsPage from "./pages/TaskDetailsPage";
 import CreateTaskPage from "./pages/CreateTaskPage";
 import EditTaskPage from "./pages/EditTaskPage";
 import CallbackPage from "./pages/CallbackPage";
+import CompletedTasksPage from "./pages/CompletedTasksPage";
 
 function App() {
   return (
@@ -25,6 +26,15 @@ function App() {
           element={
             <ProtectedRoute>
               <DashboardPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/completed"
+          element={
+            <ProtectedRoute>
+              <CompletedTasksPage />
             </ProtectedRoute>
           }
         />

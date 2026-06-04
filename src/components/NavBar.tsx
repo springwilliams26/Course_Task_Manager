@@ -21,9 +21,15 @@ const NavBar = () => {
             </Nav.Link>
 
             {isAuthenticated && (
-              <Nav.Link as={Link} to="/dashboard">
-                Dashboard
-              </Nav.Link>
+              <>
+                <Nav.Link as={Link} to="/dashboard">
+                  Dashboard
+                </Nav.Link>
+
+                <Nav.Link as={Link} to="/completed">
+                  Completed
+                </Nav.Link>
+              </>
             )}
           </Nav>
 
